@@ -3,6 +3,7 @@ using namespace std;
 #include "quickSort.cpp"
 #include "mergeSort.cpp"
 #include "selectionSort.cpp"
+#include "bubbleSort.cpp"
 
 
 // UTILITY FUNCTIONS
@@ -31,6 +32,7 @@ int main() {
    cout << "1) Quick Sort" << endl;
    cout << "2) Merge Sort" << endl;
    cout << "3) Selection Sort" << endl;
+   cout << "4) Bubble Sort" << endl;
 
    cout << "Algorithm #: ";
    cin >> selection;
@@ -42,6 +44,8 @@ int main() {
         mergeSort(randArray, 0 , sz-1);
     else if (selection ==3)
         selectionSort(randArray, sz);
+    else if (selection ==4)
+        bubbleSort(randArray, sz);
 
    cout << endl;
    cout << "Sorted Array: " << endl;
