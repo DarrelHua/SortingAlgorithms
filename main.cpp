@@ -2,6 +2,7 @@
 using namespace std;
 #include "quickSort.cpp"
 #include "mergeSort.cpp"
+#include "selectionSort.cpp"
 
 
 // UTILITY FUNCTIONS
@@ -24,9 +25,23 @@ int main() {
       randArray[i]=rand()%100;  //Generate number between 0 to 99
       cout << randArray[i] << " ";
    }
-  
-   //quickSort(randArray, 0, sizeof(randArray));
-   mergeSort(randArray, 0 , sz-1);
+
+   int selection;
+   cout << endl << "Select Sorting Algorithm:" << endl;
+   cout << "1) Quick Sort" << endl;
+   cout << "2) Merge Sort" << endl;
+   cout << "3) Selection Sort" << endl;
+
+   cout << "Algorithm #: ";
+   cin >> selection;
+   cout << endl;
+
+    if (selection == 1)
+        quickSort(randArray, 0, sizeof(randArray));
+    else if (selection == 2)
+        mergeSort(randArray, 0 , sz-1);
+    else if (selection ==3)
+        selectionSort(randArray, sz);
 
    cout << endl;
    cout << "Sorted Array: " << endl;
