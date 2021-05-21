@@ -11,7 +11,7 @@ using namespace std;
 int main()
 {
     int sz;
-    cout << "Enter the size of array::";
+    cout << "Enter the size of array: " << endl;
     cin >> sz;
     int randArray[sz];
     cout << "Before Sorting" << endl;
