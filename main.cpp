@@ -24,8 +24,8 @@ int main()
     int selection;
     cout << endl;
 
-    cout << endl
-         << "Select Sorting Algorithm:" << endl;
+    cout << endl;
+    cout << "Select Sorting Algorithm:" << endl;
     cout << setw(6) << "1) Quick Sort" << endl;
     cout << setw(6) << "2) Merge Sort" << endl;
     cout << setw(6) << "3) Selection Sort" << endl;
