@@ -1,12 +1,18 @@
 #include <iostream>
 #include <iomanip>
 // #include <algorithm>
-using namespace std;
+// using namespace std;
+using std::setw;
+using std::setprecision;
+using std::copy;
+using std::cout;
+using std::endl;
+using std::cin;
 
-#include "quickSort.cpp"
-#include "mergeSort.cpp"
-#include "selectionSort.cpp"
-#include "bubbleSort.cpp"
+#include "quickSort.h"
+#include "mergeSort.h"
+#include "selectionSort.h"
+#include "bubbleSort.h"
 //What can i do to fix this
 int main()
 {
