@@ -1,7 +1,6 @@
 #include <iostream>
 #include <iomanip>
-// #include <algorithm>
-// using namespace std;
+
 using std::setw;
 using std::setprecision;
 using std::copy;
@@ -73,39 +72,39 @@ int main()
         double total = double(end-start);
         cout << "Bubble Sort took " << total << setprecision(3) << endl;
     }
-    else if (selection == 5) {
-        int arr1[sz];
-        copy(randArray[0],randArray[sz-1], arr1[0]);
-        time(&start);
-        quickSort(arr1,0,sz);
-        time(&end);
-        total = double(end-start);
-        cout << "Quick Sort took " << total << setprecision(3) << endl;
+    // else if (selection == 5) {
+    //     int arr1[sz];
+    //     copy(randArray,randArray+sz, arr1[0]);
+    //     time(&start);
+    //     quickSort(arr1,0,sz);
+    //     time(&end);
+    //     total = double(end-start);
+    //     cout << "Quick Sort took " << total << setprecision(3) << endl;
 
-        int arr2[sz];
-        copy(randArray[0],randArray[sz-1], arr2[0]);
-        time(&start);
-        mergeSort(arr1,0,sz-1);
-        time(&end);
-        total = double(end-start);
-        cout << "Merge Sort took " << total << setprecision(3) << endl;
+    //     int arr2[sz];
+    //     copy(randArray[0],randArray[sz-1], arr2[0]);
+    //     time(&start);
+    //     mergeSort(arr1,0,sz-1);
+    //     time(&end);
+    //     total = double(end-start);
+    //     cout << "Merge Sort took " << total << setprecision(3) << endl;
 
-        int arr3[sz];
-        copy(randArray[0],randArray[sz-1], arr3[0]);
-        time(&start);
-        selectionSort(arr1,sz);
-        time(&end);
-        total = double(end-start);
-        cout << "Selection Sort took " << total << setprecision(3) << endl;
+    //     int arr3[sz];
+    //     copy(randArray[0],randArray[sz-1], arr3[0]);
+    //     time(&start);
+    //     selectionSort(arr1,sz);
+    //     time(&end);
+    //     total = double(end-start);
+    //     cout << "Selection Sort took " << total << setprecision(3) << endl;
 
-        int arr4[sz];
-        copy(randArray[0],randArray[sz-1], arr4[0]);
-        time(&start);
-        bubbleSort(arr1,sz);
-        time(&end);
-        total = double(end-start);
-        cout << "Bubble Sort took " << total << setprecision(3) << endl;
-    }
+    //     int arr4[sz];
+    //     copy(randArray[0],randArray[sz-1], arr4[0]);
+    //     time(&start);
+    //     bubbleSort(arr1,sz);
+    //     time(&end);
+    //     total = double(end-start);
+    //     cout << "Bubble Sort took " << total << setprecision(3) << endl;
+    // }
     
     
     return 0;
